@@ -1,0 +1,30 @@
+1 - Find magic
+2 - Some cool stuff with awk and sed
+3 - For loops making oodles of files :)
+4 - Fun times with Figlet
+5 - Man, that's pretty cool
+
+Learning for the peoples:
+     - Moving around on a CLI
+        - ls
+        - cd
+        - whoami O.o
+
+    - Making new things and moving stuff around:
+        - mkdir, touch
+        - mv, cp
+
+    - Finding things
+        - grep
+            - I've got 3000 files of data, and want to find that one dataset... But I can't remember where I put it...
+        - find
+            - Boy, I wish I could filter out all these files, and just find the ones that are under 512KB... Then I want to move them off somewhere else
+            - My boss is missing a file on the server, and wants me to hunt it down. I know kind of what it's called, but have no idea where it went.
+
+    - For loops! Do things... for all the files!
+        - Given 500 files, I want to execute a script for each one. This will take forever to run each one individually... 
+
+    - Piping stuff and directing output
+        - cat | wc -l # I really want to know how many lines are in this file, but I don't feel like opening it up
+        - I got some output, but I'd like to sort it and get only the unique things... Man that would take a while to write a program for...
+            - cat myFile.txt | sort | uniq # That was easy...
