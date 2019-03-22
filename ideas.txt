@@ -1,8 +1,25 @@
 1 - Find magic
+    - Find the sneaky file in all 20000 of the files...
+    - Copy it to all the other directories
+        - find command here...
 2 - Some cool stuff with awk and sed
-3 - For loops making oodles of files :)
-4 - Fun times with Figlet
-5 - Man, that's pretty cool
+    - Alice in Wonderland?
+        - wget https://www.gutenberg.org/files/11/11.txt # download alice in wonderland
+        - venture through alice in wonderland
+            - find how many times allice is referenced in the file...
+                - grep -oi 'alice' 11.txt
+            - sed - turn allice in wonderland into fanny in wonderland
+            - make multiple versions of our friends in wonderland
+                - for name in names...; do sed "s/alice/$name/gi" 11.txt > ${name}_in_wonderland.txt; done
+    
+    - Crime data for days!
+        - # pull in data for sacramento in 2006
+        - wget http://samplecsvs.s3.amazonaws.com/SacramentocrimeJanuary2006.csv
+        - # look at the data a bit
+        - crime types are in column 6 (one based)
+        
+
+4 - Man's best friend
 
 Learning for the peoples:
      - Moving around on a CLI
