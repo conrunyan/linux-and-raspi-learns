@@ -35,9 +35,9 @@ fi
 echo "Setting up challenge one"
 mkdir challenge_one
 cd challenge_one
-for newDir in {0..10}; do mkdir directory_$newDir; done
+for newDir in {0..4}; do mkdir directory_$newDir; done
 for d in ./directory_*/; do for f in a b c d e f g h; do touch ${d}${f}.txt; done ;done
-echo "th3s3cr3tp4ssw0rd" > directory_7/e.txt
+echo "th3s3cr3tp4ssw0rd" > directory_3/secretFile.txt
 cd ..
 
 # setup structure for challenge two
@@ -56,9 +56,5 @@ for sd in ./secretDir_*/; do echo "In dir: ${sd}" && for i in {0..20}; do cp ./c
 
 echo "th3s3cr3tp4ssw0rd" >> secretDir_42/cali_crimes7.txt
 cd ..
-
-
-
-
 
 
