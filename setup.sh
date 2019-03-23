@@ -43,15 +43,18 @@ cd ..
 # setup structure for challenge two
 echo "Setting up challenge two"
 mkdir challenge_two
-cd ..
 
 # setup structure for challenge three 
 echo "Setting up challenge three"
 mkdir challenge_three
-
+cd challenge_three
+wget http://samplecsvs.s3.amazonaws.com/SacramentocrimeJanuary2006.csv -O ./cali_crimes.txt
+echo "Making challenge three dirs..."
 for newDir in {0..200}; do mkdir secretDir_$newDir; done
-for sd in ./secretDir_*/; do for i in {0..100}; do touch ${sd}awpogeijaspe$i;done ;done
+echo "Copying datasets..."
+for sd in ./secretDir_*/; do echo "In dir: ${sd}" && for i in {0..20}; do cp ./cali_crimes.txt ${sd}cali_crimes_$i.txt;done ;done
 
+echo "th3s3cr3tp4ssw0rd" >> secretDir_42/cali_crimes7.txt
 cd ..
 
 
