@@ -1,5 +1,6 @@
 1 - Find magic
     - Find the sneaky file in all 20000 of the files...
+        - find . -name '*sneaky*'
     - Copy it to all the other directories
         - find command here...
 2 - Some cool stuff with awk and sed

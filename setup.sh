@@ -10,9 +10,9 @@ if [[ $makeDemo == "y" ]]; then
     echo "Setting up finding demo..."
     mkdir -p finding
     cd finding
-    #for newDir in {0..200}; do mkdir secretDir_$newDir; done
-    #for sd in ./secretDir_*/; do for i in {0..100}; do touch ${sd}awpogeijaspe$i;done ;done
-    #touch ./secretDir_42/secretfile.txt
+    for newDir in {0..200}; do mkdir secretDir_$newDir; done
+    for sd in ./secretDir_*/; do for i in {0..100}; do touch ${sd}awpogeijaspe$i;done ;done
+    touch ./secretDir_42/secretfile.txt
     cd ../
 
     # AWK and SED demos
