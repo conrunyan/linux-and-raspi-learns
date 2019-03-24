@@ -1,4 +1,4 @@
-# linux-and-raspi-learns4
+# linux-and-raspi-learns
 
 This repository contains some fun learning challenges for those interesting in learning the basics of linux.
 
